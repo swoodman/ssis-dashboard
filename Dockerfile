@@ -18,14 +18,10 @@ RUN apt-get update && ACCEPT_EULA=Y apt-get -y install msodbcsql17
 RUN apt-get -y install unixodbc unixodbc-dev
 
 # repository for python 3.8
-# RUN add-apt-repository ppa:deadsnakes/ppa
-
-
-# install python 3.6
-RUN apt-get update && apt-get install -y python3.6 python3-pip
+RUN add-apt-repository ppa:deadsnakes/ppa
 
 # (alternate) install python 3.8
-# RUN apt-get update && apt-get install -y python3.8 python3-pip
+RUN apt-get update && apt-get install -y python3.8 python3-pip
 
 # install necessary locales
 RUN apt-get install -y locales \
@@ -37,11 +33,6 @@ RUN apt-get install -y iputils-ping
 
 # cleanup
 RUN apt-get autoremove -y
-
-# (testing) ifebp ns fix for PIP
-#WORKDIR /etc
-#COPY resolv.conf ./
-#RUN 
 
 # upgrade pip
 RUN pip3 install --upgrade pip
