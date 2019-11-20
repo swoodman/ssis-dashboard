@@ -24,9 +24,9 @@ The purpose of this project is to provide a web-based, user-friendly, useful and
 
 SSIS Dashboard has been built using:
 
-* Python 3.6: https://www.python.org/ 
-* Flask 0.12.2: http://flask.pocoo.org/ 
-* PyODBC 4.0.17: https://github.com/mkleehammer/pyodbc
+* Python 3.8: https://www.python.org/ 
+* Flask 1.1.1: http://flask.pocoo.org/ 
+* PyODBC 4.0.27: https://github.com/mkleehammer/pyodbc
 * SB Admin 2 Template: http://startbootstrap.com/template-overviews/sb-admin-2/
 
 The IDE used to build the project is Visual Studio 2017 (that's why you can see the `runserver.py` file), though now I'm also using Visual Studio Code
